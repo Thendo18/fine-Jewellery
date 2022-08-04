@@ -1,0 +1,56 @@
+body {
+    background: #ddeafe;
+    padding: 20px;
+    margin: 0;
+    font-family: 'Roboto';
+  }
+  
+  .error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0 0 6px #bbbbbb;
+    width: calc(100% - 40px);
+    margin: auto;
+    padding:20px;
+  }
+  
+  .error-image {
+    width: auto;
+    max-width: calc(100% - 20px);
+  }
+  
+  .error-message-heading {
+    font-size: 24px;
+    margin-bottom: 8px;
+    letter-spacing: 1.5px;
+  }
+  
+  .error-message-text {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    text-align: center;
+  }
+  
+  .btn {
+    height: 40px;
+    border: 1px solid transparent;
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 38px;
+    border-radius: 4px;
+  }
+  
+  .go-back-btn {
+    color: #ffffff;
+    background:  #dfd89a;
+    box-shadow: 0px 1px 2px #bbbbbb;
+    text-transform: capitalize;
+  }
+  
+  .go-back-btn:hover,
+  .go-back-btn:focus {
+    cursor: pointer;
+  }
