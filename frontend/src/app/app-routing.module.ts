@@ -21,6 +21,7 @@ const routes: Routes = [
   {path:'footer',component:FooterComponent},
   // {path:'orders',component:OrdersComponent, canActivate: [AuthGuard]},
   {path:'prodDetails', component: ProductViewComponent},
+  {path:'cart', component: ShoppingCartComponent},
   // {path:'checkout', component:CheckoutComponent,canActivate: [AuthGuard]},
   // {path:'userprofile', component: UserprofileComponent, canActivate: [AuthGuard]},
   {path:'404', component:NotfoundComponent},
