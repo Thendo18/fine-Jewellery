@@ -12,7 +12,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 
 const routes: Routes = [
-  {path:'', redirectTo: 'products', pathMatch:'full'},
+  {path:'', redirectTo: 'landing', pathMatch:'full'},
   {path:'login', component:LoginComponent},
   {path:'register',component:RegisterComponent},
   {path:'landing',component:LandingPageComponent},
@@ -25,7 +25,7 @@ const routes: Routes = [
   // {path:'checkout', component:CheckoutComponent,canActivate: [AuthGuard]},
   // {path:'userprofile', component: UserprofileComponent, canActivate: [AuthGuard]},
   {path:'404', component:NotfoundComponent},
-  {path:'**', redirectTo: 'products', pathMatch:'full'},
+  {path:'**', redirectTo: 'landing', pathMatch:'full'},
 
 ];
 
