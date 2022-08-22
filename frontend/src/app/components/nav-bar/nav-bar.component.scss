@@ -6,14 +6,20 @@
     margin: 0px;
     font-family: 'segoe ui';
   }
-  
+// .btn {
+// //   margin: 1px;
+//   background-color: #ffffff;
+//   width: 10px;
+// //   border: #dfd89a;
+
+// }
   .nav {
     height: 50px;
     width: 100%;
     background-color: #dfd89a;
     position: relative;
   }
-  
+
   .nav > .nav-header {
     display: inline;
   }
@@ -39,7 +45,7 @@
   .nav > .nav-links > a {
     display: inline-block;
     padding: 13px 10px 13px 10px;
-margin-left: 1200px;
+margin-left: 1130px;
     text-decoration: none;
     color: #343030;
   }
@@ -85,6 +91,7 @@ margin-left: 1200px;
       top: 50px;
       left: 0px;
     }
+ 
     .nav > .nav-links > a {
       display: block;
       width: 100%;
