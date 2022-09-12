@@ -35,7 +35,7 @@ exports.register = async (req, res) => {
       bcrypt.hash(password, 10, (err, hash) => {
         if(err) 
        res.status(err).json({
-         error: "Sever Error",
+         error: "Server Error",
         });
     const user = {
       username, 
@@ -49,7 +49,7 @@ var flag = 1;
 //===============================insert into that body you requested the information============================================
 
 client
-.query(`INSERT INTO users (name , email,  password) VALUES ($1,$2,$3);`, [user.name, user.email, user.password], (err) => {
+.query(`INSERT INTO users (username , email,  password) VALUES ($1,$2,$3);`, [user.username, user.email, user.password], (err) => {
 
 if (err) {
 flag  =  0;                          //If user is not inserted is not inserted to database assigning flag as 0/false.
