@@ -15,7 +15,9 @@ import { ProductsComponent } from './components/products/products.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 import { UserprofileComponent } from './components/userprofile/userprofile.component';
 import { IonicModule } from '@ionic/angular';
-
+import { CheckoutComponent } from './components/checkout/checkout.component';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthconfigInterceptor } from './interceptor/authconfig.interceptor';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,14 +31,20 @@ import { IonicModule } from '@ionic/angular';
     OrdersComponent,
     ProductsComponent,
     ShoppingCartComponent,
-    UserprofileComponent
+    UserprofileComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     IonicModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    // provide: HTTP_INTERCEPTORS,
+    //   useClass: AuthInterceptor,
+    //   multi: true
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

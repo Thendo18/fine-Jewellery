@@ -5,7 +5,7 @@ import { map, Observable, observable } from 'rxjs';
 import { Login } from '../interfaces/login';
 import { Register } from '../interfaces/register';
 import { Router } from '@angular/router';
-import { UserId } from '../interfaces/userid';
+import { Userid } from '../interfaces/userid';
 
 const token = localStorage.getItem('access_token');
 const httpOptions = {
@@ -16,8 +16,9 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class AuthenticationService {
-  baseUrl$ = environment.baseUrl;
-  //hosted link = https://e-commerceshoes.herokuapp.com/
+  // baseUrl$ = environment.baseUrl;
+  baseUrl$ = "http://localhost:8080/api"
+
   constructor(private http: HttpClient,private router: Router) { }
 
   login(users : Login): Observable<any> {
