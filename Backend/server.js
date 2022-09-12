@@ -27,7 +27,7 @@ app.use(
     })
 );
 
-const port = process.env.PORT || 7070;
+const port = process.env.PORT || 8080;
  
 //const hostURL = '0.0.0.0'; //Fault-Tolerant listening port for Backend. Picks available dynamic IPv4 and IPv6 addresses of the local host
 

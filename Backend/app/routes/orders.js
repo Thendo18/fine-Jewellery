@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
-const orders = require('../controllers/orders');
-const usercontroller = require('../middlewares/usercontroller')
+const orders = require('../controllers/order.controller');
+const usercontroller = require('../middlewares/userController')
 //Get all orders
 
 router.get("/order_list/:id", orders.getAllOrders);
