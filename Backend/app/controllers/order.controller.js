@@ -6,7 +6,7 @@ module.exports.getAllOrders = async (req, res) => {
     const id = parseInt(req.params.id); 
     try{
         client.query
-        (`SELECT orders.orderid, orders.user_id, orders.address, orders.city, orders.town, 
+        (`SELECT orders.order_id, orders.user_id, orders.address, orders.city, orders.town, 
         orders.zip, orders.delivery_price, orders.totalcost, orders.orderdate, 
         orderitems.product_id, orderitems.quantity, products.prod_name, products.image
         FROM orders

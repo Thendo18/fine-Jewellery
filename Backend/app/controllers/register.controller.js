@@ -20,7 +20,7 @@ const jwt = require("jsonwebtoken");
 
 
 exports.register = async (req, res) => {
-     const { name, email, password } = req.body;
+     const { username, email, password } = req.body;
      try { 
        const data = await client.query(`SELECT * FROM users WHERE email= $1;` , [email]); //Check if user exist
        const arr = data.rows;
@@ -38,7 +38,7 @@ exports.register = async (req, res) => {
          error: "Sever Error",
         });
     const user = {
-      name, 
+      username, 
       email,
       password: hash,
     };
