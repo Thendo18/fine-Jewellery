@@ -14,7 +14,7 @@ import { OrdersComponent } from './components/orders/orders.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 import { UserprofileComponent } from './components/userprofile/userprofile.component';
-import { IonicModule } from '@ionic/angular';
+// import { IonicModule } from '@ionic/angular';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptor } from './interceptor/authconfig.interceptor';
@@ -40,7 +40,7 @@ import { NgxLoadingModule, ngxLoadingAnimationTypes } from 'ngx-loading';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    IonicModule.forRoot(),
+    // IonicModule.forRoot(),
     ReactiveFormsModule,
     RouterModule,
     FormsModule, 
