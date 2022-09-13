@@ -88,20 +88,20 @@ export class RegisterComponent implements OnInit {
       password : this.Form.value.password,
     }
     this.loading = true;
-    this.userService.register(user).subscribe({
-      next:data => {
-        this.isSuccessful = true;
-        this.isSignUpFailed = false;
-        this.Form.reset();
-        this.submitted = false;
-        this.loading = false;
-        this.router.navigate(['/login']);
-      },
-      error: err => {
-        this.loading = true;
-        this.errorMessage = err.error.message;
-        this.loading = false;
-      }
-    });
+    // this.userService.register(user).subscribe({
+    //   next:data => {
+    //     this.isSuccessful = true;
+    //     this.isSignUpFailed = false;
+    //     this.Form.reset();
+    //     this.submitted = false;
+    //     this.loading = false;
+    //     this.router.navigate(['/login']);
+    //   },
+    //   error: err => {
+    //     this.loading = true;
+    //     this.errorMessage = err.error.message;
+    //     this.loading = false;
+    //   }
+    // });
   }
 }

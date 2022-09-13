@@ -59,21 +59,21 @@ export class LoginComponent implements OnInit {
       email: this.Form.value.email,
       password: this.Form.value.password
     }
-    this.auth.login(username).subscribe({
-      next:data =>{
-        this.loading = true;
-        this.userToken = data
-        localStorage.setItem('access_token', this.userToken.token)
-        this.loading = false;
-        this.router.navigate(['/products'])
-      },
-        error: err => {
-          this.submitted = true;
-          this.loading = false;
-          this.errorMessage = err.error.message;
+    // this.auth.login(username).subscribe({
+    //   next:data =>{
+    //     this.loading = true;
+    //     this.userToken = data
+    //     localStorage.setItem('access_token', this.userToken.token)
+    //     this.loading = false;
+    //     this.router.navigate(['/products'])
+    //   },
+    //     error: err => {
+    //       this.submitted = true;
+    //       this.loading = false;
+    //       this.errorMessage = err.error.message;
           
-      }
-    } 
-  ) 
+    //   }
+    // } 
+  // ) 
 }
 }
